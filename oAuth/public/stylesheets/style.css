@@ -1,0 +1,23 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#login-button {
+  background-color: #3c4146;
+  color: #EEF4EC;
+  padding: 1em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -1em;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 150px;
+  text-align: center;
+}
