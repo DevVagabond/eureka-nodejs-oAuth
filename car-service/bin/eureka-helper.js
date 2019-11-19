@@ -5,8 +5,8 @@ const eurekaPort = 8761;
 const hostName = (process.env.HOSTNAME || 'localhost')
 const ipAddr = '172.0.0.1';
 
-exports.registerWithEureka = function(appName, PORT) {
-    const client = new Eureka({
+exports.registerWithEureka = function (appName, PORT) {
+  const client = new Eureka({
     instance: {
       app: appName,
       hostName: hostName,
@@ -31,31 +31,31 @@ exports.registerWithEureka = function(appName, PORT) {
     },
   })
 
-client.logger.level('debug')
+  client.logger.level('debug')
 
-client.start( error => {
-    console.log(error || "user service registered")
-});
+  client.start(error => {
+    console.log(error || "car-service is registered")
+  });
 
 
 
-function exitHandler(options, exitCode) {
+  function exitHandler(options, exitCode) {
     if (options.cleanup) {
     }
     if (exitCode || exitCode === 0) console.log(exitCode);
     if (options.exit) {
-        client.stop();
+      client.stop();
     }
-}
+  }
 
-client.on('deregistered', () => {
+  client.on('deregistered', () => {
     process.exit();
     console.log('after deregistered');
-})
+  })
 
-client.on('started', () => {
-  console.log("eureka host  " + eurekaHost);
-})
+  client.on('started', () => {
+    console.log("eureka host  " + eurekaHost);
+  })
 
-process.on('SIGINT', exitHandler.bind(null, {exit:true}));
+  process.on('SIGINT', exitHandler.bind(null, { exit: true }));
 };

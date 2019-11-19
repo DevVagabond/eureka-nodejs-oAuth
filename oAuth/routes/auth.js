@@ -8,6 +8,7 @@ router.get('/login', function (req, res, next) {
 });
 
 router.get('/redirect', controller.authController.redirectoAuth);
+router.post('/verify', controller.authController.verifyUser);
 
 
 

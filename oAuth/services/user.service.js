@@ -7,7 +7,7 @@ const patchUser = userData => new Promise((resolve, reject) => {
     'email': userData.email
   })
     .then(user => {
-      if (!user) {
+      if (!user && userData && userData.email) {
         return models.User.create({
           name: userData.name,
           email: userData.email,

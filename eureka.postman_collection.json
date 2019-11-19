@@ -1,0 +1,714 @@
+{
+	"info": {
+		"_postman_id": "d14fa30d-700b-46d4-a227-26dd6e0dc97a",
+		"name": "eureka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add new car",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"brand\" : \"ferrari\",\n\t\"colour\" : \"red\",\n\t\"carNumber\" : \"demo008\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}/car-service/api/v1/car/secure/add",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"car-service",
+						"api",
+						"v1",
+						"car",
+						"secure",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add new car",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"brand\" : \"ferrari\",\n\t\"colour\" : \"red\",\n\t\"carNumber\" : \"demo008\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/car-service/api/v1/car/secure/add",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"car-service",
+								"api",
+								"v1",
+								"car",
+								"secure",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 06:06:55 GMT"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"103-wK8dhK0bFZh6taHVFXAvf1rifM8\""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"updatedAt\": \"2019-11-19T06:06:54.965Z\",\n        \"createdAt\": \"2019-11-19T06:06:54.965Z\",\n        \"brand\": \"ferrari\",\n        \"colour\": \"red\",\n        \"carNumber\": \"DEMO008\",\n        \"owner\": \"5dd1732840c5a65e6e7502c0\",\n        \"_id\": \"5dd3867e3107074add1c4d14\"\n    },\n    \"success\": true,\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "Fetch All Car",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{local}}/car-service/api/v1/car/secure/all",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"car-service",
+						"api",
+						"v1",
+						"car",
+						"secure",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Fetch All Car",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}/car-service/api/v1/car/secure/all",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"car-service",
+								"api",
+								"v1",
+								"car",
+								"secure",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 06:08:27 GMT"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4f3-z96/HxUOD9H/sEM/CGjxjRpGQyw\""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"_id\": \"5dd3867e3107074add1c4d14\",\n            \"updatedAt\": \"2019-11-19T06:06:54.965Z\",\n            \"createdAt\": \"2019-11-19T06:06:54.965Z\",\n            \"brand\": \"ferrari\",\n            \"colour\": \"red\",\n            \"carNumber\": \"DEMO008\",\n            \"owner\": \"5dd1732840c5a65e6e7502c0\"\n        },\n        {\n            \"_id\": \"5dd386683107074add1c4d13\",\n            \"updatedAt\": \"2019-11-19T06:06:32.465Z\",\n            \"createdAt\": \"2019-11-19T06:06:32.465Z\",\n            \"brand\": \"ferrari\",\n            \"colour\": \"red\",\n            \"carNumber\": \"DEMO007\",\n            \"owner\": \"5dd1732840c5a65e6e7502c0\"\n        },\n        {\n            \"_id\": \"5dd3857e0a48e048da622c42\",\n            \"updatedAt\": \"2019-11-19T06:02:38.276Z\",\n            \"createdAt\": \"2019-11-19T06:02:38.276Z\",\n            \"brand\": \"ferrari\",\n            \"colour\": \"red\",\n            \"carNumber\": \"007\",\n            \"owner\": \"5dd1732840c5a65e6e7502c0\"\n        },\n        {\n            \"_id\": \"5dd34edafd46957d33617e17\",\n            \"updatedAt\": \"2019-11-19T02:09:30.587Z\",\n            \"createdAt\": \"2019-11-19T02:09:30.587Z\",\n            \"brand\": \"toyota\",\n            \"colour\": \"white\",\n            \"carNumber\": \"SSH22\",\n            \"owner\": \"5dd1732840c5a65e6e7502c0\"\n        },\n        {\n            \"_id\": \"5dd34ebefd46957d33617e16\",\n            \"updatedAt\": \"2019-11-19T02:09:02.667Z\",\n            \"createdAt\": \"2019-11-19T02:09:02.667Z\",\n            \"brand\": \"audi\",\n            \"colour\": \"black\",\n            \"carNumber\": \"WB69847\",\n            \"owner\": \"5dd1732840c5a65e6e7502c0\"\n        },\n        {\n            \"_id\": \"5dd34ea6fd46957d33617e15\",\n            \"updatedAt\": \"2019-11-19T02:08:38.752Z\",\n            \"createdAt\": \"2019-11-19T02:08:38.752Z\",\n            \"brand\": \"bmw\",\n            \"colour\": \"black\",\n            \"carNumber\": \"WB1234\",\n            \"owner\": \"5dd1732840c5a65e6e7502c0\"\n        }\n    ],\n    \"success\": true,\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Availability",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"dates\" : [{\n\t\t\"from\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 19\n\t\t},\n\t\t\"to\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 20\n\t\t}\n\t},{\n\t\t\"from\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 22\n\t\t},\n\t\t\"to\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 25\n\t\t}\n\t},{\n\t\t\"from\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 11,\n\t\t\t\"day\" : 20\n\t\t},\n\t\t\"to\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 11,\n\t\t\t\"day\" : 28\n\t\t}\n\t}]\n}"
+				},
+				"url": {
+					"raw": "{{local}}/car-service/api/v1/car/secure/add-availablity/5dd3857e0a48e048da622c42",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"car-service",
+						"api",
+						"v1",
+						"car",
+						"secure",
+						"add-availablity",
+						"5dd3857e0a48e048da622c42"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Availability",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"dates\" : [{\n\t\t\"from\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 19\n\t\t},\n\t\t\"to\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 20\n\t\t}\n\t},{\n\t\t\"from\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 22\n\t\t},\n\t\t\"to\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 25\n\t\t}\n\t},{\n\t\t\"from\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 11,\n\t\t\t\"day\" : 20\n\t\t},\n\t\t\"to\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 11,\n\t\t\t\"day\" : 28\n\t\t}\n\t}]\n}"
+						},
+						"url": {
+							"raw": "{{local}}/car-service/api/v1/car/secure/add-availablity/5dd3857e0a48e048da622c42",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"car-service",
+								"api",
+								"v1",
+								"car",
+								"secure",
+								"add-availablity",
+								"5dd3857e0a48e048da622c42"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 06:13:28 GMT"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"205-NThBALk+1mP0Ods4jEyZ09yYuLg\""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"updatedAt\": \"2019-11-19T06:13:27.726Z\",\n        \"createdAt\": \"2019-11-19T06:13:27.726Z\",\n        \"carId\": \"5dd3857e0a48e048da622c42\",\n        \"_id\": \"5dd388073107074add1c4d15\",\n        \"dates\": [\n            {\n                \"from\": \"2019-11-18T16:00:00.000Z\",\n                \"to\": \"2019-11-19T16:00:00.000Z\",\n                \"_id\": \"5dd388073107074add1c4d18\"\n            },\n            {\n                \"from\": \"2019-11-21T16:00:00.000Z\",\n                \"to\": \"2019-11-24T16:00:00.000Z\",\n                \"_id\": \"5dd388073107074add1c4d17\"\n            },\n            {\n                \"from\": \"2019-12-19T16:00:00.000Z\",\n                \"to\": \"2019-12-27T16:00:00.000Z\",\n                \"_id\": \"5dd388073107074add1c4d16\"\n            }\n        ]\n    },\n    \"success\": true,\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "Car list (filter: date-availability)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{local}}/car-service/api/v1/car/secure/list?from=2019-11-20T16:00:00.000Z",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"car-service",
+						"api",
+						"v1",
+						"car",
+						"secure",
+						"list"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2019-11-20T16:00:00.000Z"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Car list (filter: date-availability)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}/car-service/api/v1/car/secure/list?from=2019-11-20T16:00:00.000Z",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"car-service",
+								"api",
+								"v1",
+								"car",
+								"secure",
+								"list"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2019-11-20T16:00:00.000Z"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 06:14:40 GMT"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"465-uLc6ShcDD8XSZZqqKqiMjHNmnzE\""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"_id\": \"5dd388073107074add1c4d15\",\n            \"updatedAt\": \"2019-11-19T06:13:27.726Z\",\n            \"createdAt\": \"2019-11-19T06:13:27.726Z\",\n            \"carId\": {\n                \"_id\": \"5dd3857e0a48e048da622c42\",\n                \"updatedAt\": \"2019-11-19T06:02:38.276Z\",\n                \"createdAt\": \"2019-11-19T06:02:38.276Z\",\n                \"brand\": \"ferrari\",\n                \"colour\": \"red\",\n                \"carNumber\": \"007\",\n                \"owner\": \"5dd1732840c5a65e6e7502c0\"\n            },\n            \"dates\": [\n                {\n                    \"from\": \"2019-11-18T16:00:00.000Z\",\n                    \"to\": \"2019-11-19T16:00:00.000Z\",\n                    \"_id\": \"5dd388073107074add1c4d18\"\n                },\n                {\n                    \"from\": \"2019-11-21T16:00:00.000Z\",\n                    \"to\": \"2019-11-24T16:00:00.000Z\",\n                    \"_id\": \"5dd388073107074add1c4d17\"\n                },\n                {\n                    \"from\": \"2019-12-19T16:00:00.000Z\",\n                    \"to\": \"2019-12-27T16:00:00.000Z\",\n                    \"_id\": \"5dd388073107074add1c4d16\"\n                }\n            ]\n        },\n        {\n            \"_id\": \"5dd367981d243327d4ba4944\",\n            \"updatedAt\": \"2019-11-19T04:24:49.723Z\",\n            \"createdAt\": \"2019-11-19T03:55:04.893Z\",\n            \"carId\": {\n                \"_id\": \"5dd34edafd46957d33617e17\",\n                \"updatedAt\": \"2019-11-19T02:09:30.587Z\",\n                \"createdAt\": \"2019-11-19T02:09:30.587Z\",\n                \"brand\": \"toyota\",\n                \"colour\": \"white\",\n                \"carNumber\": \"SSH22\",\n                \"owner\": \"5dd1732840c5a65e6e7502c0\"\n            },\n            \"dates\": [\n                {\n                    \"_id\": \"5dd36e9149af2a331fac02ed\",\n                    \"to\": \"2019-11-21T16:00:00.000Z\",\n                    \"from\": \"2019-11-18T16:00:00.000Z\"\n                }\n            ]\n        }\n    ],\n    \"success\": true,\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "Car Availability (per-car by carId)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{local}}/car-service/api/v1/car/secure/check-time/5dd3857e0a48e048da622c42?from=2019-11-20T16:00:00.000Z",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"car-service",
+						"api",
+						"v1",
+						"car",
+						"secure",
+						"check-time",
+						"5dd3857e0a48e048da622c42"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2019-11-20T16:00:00.000Z"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Car Availability (per-car by carId)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}/car-service/api/v1/car/secure/check-time/5dd3857e0a48e048da622c42?from=2019-11-20T16:00:00.000Z",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"car-service",
+								"api",
+								"v1",
+								"car",
+								"secure",
+								"check-time",
+								"5dd3857e0a48e048da622c42"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2019-11-20T16:00:00.000Z"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 06:19:25 GMT"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"205-thZ3yewf+ZKNU1vvgQthYUPAYG4\""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"_id\": \"5dd388073107074add1c4d15\",\n        \"updatedAt\": \"2019-11-19T06:13:27.726Z\",\n        \"createdAt\": \"2019-11-19T06:13:27.726Z\",\n        \"carId\": \"5dd3857e0a48e048da622c42\",\n        \"dates\": [\n            {\n                \"from\": \"2019-11-18T16:00:00.000Z\",\n                \"to\": \"2019-11-19T16:00:00.000Z\",\n                \"_id\": \"5dd388073107074add1c4d18\"\n            },\n            {\n                \"from\": \"2019-11-21T16:00:00.000Z\",\n                \"to\": \"2019-11-24T16:00:00.000Z\",\n                \"_id\": \"5dd388073107074add1c4d17\"\n            },\n            {\n                \"from\": \"2019-12-19T16:00:00.000Z\",\n                \"to\": \"2019-12-27T16:00:00.000Z\",\n                \"_id\": \"5dd388073107074add1c4d16\"\n            }\n        ]\n    },\n    \"success\": true,\n    \"message\": \"success\",\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "Update car schedule",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"dates\" : [{\n\t\t\"from\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 19\n\t\t},\n\t\t\t\t\"to\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 22\n\t\t}\n\t}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}/car-service/api/v1/car/secure/edit-time/5dd367981d243327d4ba4944",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"car-service",
+						"api",
+						"v1",
+						"car",
+						"secure",
+						"edit-time",
+						"5dd367981d243327d4ba4944"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update car schedule",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzQxMzIyNzYxOTcsImRhdGEiOnsicm9sZSI6InVzZXIiLCJlbWFpbCI6InNoYXdvbmthbmppNDZAZ21haWwuY29tIiwiYWNjZXNzVG9rZW4iOiJjMDU5NTM5NTk3ZDNhMjVjMDZhYjI5ZWVkMTZhODg2MzA3ZDljMjFiIn0sImlhdCI6MTU3NDEyODY3Nn0.vAOUJJCNpVu1WY-lAX2Cvbicj8pSbcCbGBIuvcB9ezmuBRNP98YB6WJJRzqHWaJ2y6dl1I5Wi4eQOP2o6ksFgIVTEYRb5dCt0f8A3-s1nJ6nkEspBn4xrEJws4n-pR-wC86M2WWEA2Y7Xq16O0YIFNBCavoZ-zzmBITeUVNEQ6k",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "rted635yhdrt6f5hjtf6g5j6f5gh41j5h4km6g5k6\\hj46\\54lk5jm4k6l1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"dates\" : [{\n\t\t\"from\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 19\n\t\t},\n\t\t\t\t\"to\": {\n\t\t\t\"year\": 2019,\n\t\t\t\"month\" : 10,\n\t\t\t\"day\" : 22\n\t\t}\n\t}]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/car-service/api/v1/car/secure/edit-time/5dd367981d243327d4ba4944",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"car-service",
+								"api",
+								"v1",
+								"car",
+								"secure",
+								"edit-time",
+								"5dd367981d243327d4ba4944"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 19 Nov 2019 04:24:50 GMT"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"45-8vVPrHUR7bRE4Quuk0tpyVHSQKI\""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {},\n    \"success\": true,\n    \"message\": \"update successful\",\n    \"status\": 200\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

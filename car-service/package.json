@@ -1,0 +1,44 @@
+{
+  "name": "car-service",
+  "version": "0.0.0",
+  "private": true,
+  "engine": {
+    "node": "8.14.0",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "start": "DEBUG=* node ./bin/www",
+    "test": "mocha ./test/comm.js"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "aws-sdk": "^2.487.0",
+    "bull": "^3.10.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "cron": "^1.7.1",
+    "debug": "~2.6.9",
+    "dotenv": "^8.0.0",
+    "eureka-js-client": "^4.5.0",
+    "express": "~4.16.0",
+    "handlebars": "^4.1.2",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "jsrsasign": "^8.0.12",
+    "jsrsasign-util": "^1.0.0",
+    "moment": "^2.24.0",
+    "mongoose": "4.12.4",
+    "morgan": "~1.9.0",
+    "node-rsa": "^1.0.5",
+    "nodemailer": "^6.2.1",
+    "puid": "^1.0.7",
+    "randomatic": "^3.1.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^6.2.0"
+  }
+}

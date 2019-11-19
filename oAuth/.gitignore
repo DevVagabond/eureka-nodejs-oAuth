@@ -1,0 +1,7 @@
+node_modules/
+keystore/
+.eslintrc.js
+.vscode/
+npm-debug.log
+.idea/*
+

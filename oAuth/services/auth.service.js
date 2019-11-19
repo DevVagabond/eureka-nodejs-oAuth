@@ -8,7 +8,6 @@ const privateKey = fs.readFileSync(path.resolve(__dirname + '/../.pem/private.pe
 
 
 const generateToken = config => new Promise((resolve, reject) => {
-  console.log("generate token", config);
   let tokenObj = { role: 'user', email: config.email, accessToken: config.accessToken }
   let jwtData = {};
   let now = new Date().getTime();
