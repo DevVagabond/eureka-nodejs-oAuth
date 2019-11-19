@@ -1,0 +1,25 @@
+version: '3.5'
+services:
+  auth-service:
+    container_name: auth-app-ms
+    build:
+      context: oAuth
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    
+  
+  car-service:
+    container_name: car-app-ms
+    build:
+      context: car-service
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    
+volumes:
+  data-volume:
