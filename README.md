@@ -47,6 +47,8 @@ open ```localhost:8050/oauth/login```
 ### ```step 2``` : 
 please click login to get redirected to github. after github login you will be redirected back to the localhost with a token. please use the token to communicate with other APIs.
 
+base URL is:  localhost:8050/
+
 there is postman collection attached in the root directory. import the collection into your postman to view all the APIs
 
 
