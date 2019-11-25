@@ -49,6 +49,12 @@ please click login to get redirected to github. after github login you will be r
 
 base URL is:  localhost:8050/
 
+## AWS Base URL: http://ec2-54-255-173-186.ap-southeast-1.compute.amazonaws.com:8050
+
+## Login URL: http://ec2-54-255-173-186.ap-southeast-1.compute.amazonaws.com:8050/oauth/login
+
+### Eureka server URL:   http://54.255.173.186:8761
+
 there is postman collection attached in the root directory. import the collection into your postman to view all the APIs
 
 
